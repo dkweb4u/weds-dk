@@ -9,19 +9,31 @@ let seconds = document.querySelector(".countbox .seconds");
 window.addEventListener("load",()=>{
 
 function timeBetween(date1, date2) {
-    const diffTime = Math.abs(date2 - date1);
 
-    const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
-    const diffHours = Math.floor((diffTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const diffMinutes = Math.floor((diffTime % (1000 * 60 * 60)) / (1000 * 60));
-    const diffSeconds = Math.floor((diffTime % (1000 * 60)) / 1000);
+    if(date2 < date1){
+        const diffTime = Math.abs(date2 - date1);
     
-    return {
-        days: diffDays,
-        hours: diffHours,
-        minutes: diffMinutes,
-        seconds: diffSeconds
-    };
+        const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
+        const diffHours = Math.floor((diffTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const diffMinutes = Math.floor((diffTime % (1000 * 60 * 60)) / (1000 * 60));
+        const diffSeconds = Math.floor((diffTime % (1000 * 60)) / 1000);
+        
+        return {
+            days: diffDays,
+            hours: diffHours,
+            minutes: diffMinutes,
+            seconds: diffSeconds
+        };
+    }
+    else{
+        return {
+            days: "*",
+            hours: "*",
+            minutes: "*",
+            seconds: "*"
+        };
+    }
+    
 }
 
 setInterval(() => {
