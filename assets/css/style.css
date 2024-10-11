@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+.mainfont{
+    font-family: "Parisienne", cursive;
+    font-weight: 400;
+    font-style: normal;
+  
+}
+.font1{
+    font-family: "Playwrite VN", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+.font2{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+  }
+.font3{
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+.font4 {
+  font-family: "Playwrite CU", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.font5 {
+    font-family: "Nova Square", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  img{
+  max-width: 100%;
+}
+.main  .countbox{
+    display: flex;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    justify-content: space-evenly;
+    background-size:  contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: fit-content;
+    position: relative;
+    z-index: 2;
+    margin: auto;
+    margin-top: -20px;
+}
+.main  .countbox .item{
+    text-align: center;
+    color: #564c2e;
+   margin: 15px;
+}
+
+.main  .countbox .count-item{
+height: 45px;
+width: 45px;
+margin-bottom: 8px;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #fff;
+background: #564c2e;
+box-shadow: 1px 1px 5px #0005;
+border-radius: 5px;
+font-size: 20px;
+}
+.row{
+  display: flex;
+  width: 100%;
+}
+.col{
+ width: 50%;
+  padding: 10px;
+}
+.text-center {
+text-align: center;
+}
+.animi-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+}
+.animi-content p{
+  font-size: 30px;
+  font-weight: 600;
+  color: #6e5427;
+  margin-bottom: 15px;
+}
+.animi-content h2{
+  font-size: 40px;
+  color: #fb353c;
+}
+.animi-content h4{
+  font-size: 24px;
+  color: #fe6439;
+}
+.gallery .flexbox{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 10px;
+  justify-content: space-evenly;
+}
+.gallery  h2{
+  margin: 20px auto 10px;
+  font-weight: 600;
+  width: fit-content;
+  font-size: 40px;
+  background-image: linear-gradient(180deg,#6e5427 50%,  #fb353c 50%);
+  background-repeat: no-repeat;
+  color: transparent;
+  background-clip: text;
+  animation: letterway 3s linear forwards ;
+}
+.others .container{
+  background-image: url("../images/designs/bg.jpg");
+  background-size: 140%;
+  animation: bgscale 30s linear infinite ;
+  max-width: 80%;
+  margin:0 auto 50px;
+  box-shadow: 0px 0px 30px rgb(0,0,0, 0.1);
+  display: block;
+  padding: 20px;
+}
+@keyframes bgscale {
+  0%{
+    background-position:100% 50%;
+  }
+  100%{
+    background-position: 0% 100%;
+  }
+}
+.others h2{
+  font-weight: 600;
+  font-size: 40px;
+  color: #ff5d30;
+}
+.others  h4{
+  font-size: 30px;
+
+}
+.others  h4.red{
+  color: #fb353c;
+}
+.others  h4.gold{
+  color: #f3a910;
+}
+.others .day{
+  font-size: 24px;
+  font-weight: 600;
+  margin: 10px auto;
+  color: #d9716e;
+}
+.others .date{
+  font-size: 20px;
+  font-weight: 600;
+  margin: 10px auto;
+  color: #d9716e;
+}
+.others .time{
+  font-size: 20px;
+  font-weight: 600;
+  color: #3b6074;
+}
+.others .box-buttons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+.others .box-buttons a{
+  display: block;
+  width: fit-content;
+  margin: 10px;
+  background: #564c2e;
+  color: #fff;
+  font-size: 18px;
+  padding: 8px 25px;
+  text-decoration: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border-radius: 0px 25px;
+}
+.others .box-buttons a svg{
+  margin-right: 5px;
+}
+@keyframes letterway {
+  0%{
+    background-size:0% 100%;
+  }
+  100%{
+    background-size: 100% 100%;
+  }
+}
+.gallery .imgs{
+  display: block;
+  max-width: 200px;
+  min-width: 200px;
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  margin: 15px;
+  border-radius: 0px 30px;
+}
+
+@media (max-width: 991px) {
+  .row{
+   flex-wrap: wrap;
+  }
+  .col{
+    width: 100%;
+    padding: 20px;
+  }
+  .animi-content{
+   margin-top: -20px;
+  }
+}

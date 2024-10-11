@@ -37,14 +37,21 @@ function timeBetween(date1, date2) {
 }
 
 setInterval(() => {
+let timer = document.querySelector(".timer");
 const date1 = new Date('2024-11-07T18:00:00');
 const date2 = new Date();
 const timeDiff = timeBetween(date1, date2);
+if(timeDiff.days != "*"){
+    days.textContent = timeDiff.days;
+    hours.textContent = timeDiff.hours;
+    minutes.textContent = timeDiff.minutes;
+    seconds.textContent = timeDiff.seconds;
+}
 
-days.textContent = timeDiff.days;
-hours.textContent = timeDiff.hours;
-minutes.textContent = timeDiff.minutes;
-seconds.textContent = timeDiff.seconds;
+else{
+    timer.style.display = "none";
+}
+
 }, 100);
 
 });
