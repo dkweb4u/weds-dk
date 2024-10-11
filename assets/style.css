@@ -53,12 +53,11 @@
     position: relative;
     z-index: 2;
     margin: auto;
-    padding: 20px 40px;
     margin-top: -20px;
 }
 .main  .countbox .item{
     text-align: center;
-    color: #fff;
+    color: #564c2e;
    margin: 15px;
 }
 
@@ -70,6 +69,7 @@ display: flex;
 align-items: center;
 justify-content: center;
 color: #fff;
+background: #564c2e;
 box-shadow: 1px 1px 5px #0005;
 border-radius: 5px;
 font-size: 20px;
@@ -81,9 +81,33 @@ font-size: 20px;
 .col{
  width: 50%;
   padding: 10px;
-  border: 1px solid blue;
 }
-
+.text-center {
+text-align: center;
+}
+.animi-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+}
+.animi-content p{
+  font-size: 30px;
+  font-weight: 600;
+  color: #6e5427;
+  margin-bottom: 15px;
+}
+.animi-content h2{
+  font-size: 40px;
+  color: #d46562;
+}
+.animi-content h4{
+  font-size: 24px;
+  color: #fe6439;
+}
 @media (max-width: 991px) {
   .row{
    flex-wrap: wrap;
@@ -92,14 +116,4 @@ font-size: 20px;
     width: 100%;
     padding: 20px;
   }
-}
-
-@media (max-width: 421px) {
-  .main .countbox .count-item{
-    height: 36px;
-    width: 36px;
-  }
-  .main  .countbox .item {
-    margin: 10px;
-}
 }
