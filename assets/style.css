@@ -1,9 +1,14 @@
 *{
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
   }
-
+.mainfont{
+    font-family: "Parisienne", cursive;
+    font-weight: 400;
+    font-style: normal;
+  
+}
 .font1{
     font-family: "Playwrite VN", cursive;
     font-optical-sizing: auto;
@@ -33,36 +38,58 @@
     font-style: normal;
   }
   
-  
-
-img{
-        display: block;
-        max-width: 500px;
-        width: 100%;
-        margin: 25px auto;
-        padding: 20px;
+.main .img img{
+  max-width: 100%;
 }
-.countbox{
+.main  .countbox{
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin-top: -70px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-size:  contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: fit-content;
+    position: relative;
+    z-index: 2;
+    margin: auto;
+    padding: 20px 40px;
+    margin-top: -20px;
 }
-.countbox .item{
-    margin: 20px;
+.main  .countbox .item{
     text-align: center;
+    color: #002d4d;
+   margin: 15px;
 }
-.countbox .count-item{
-height: 50px;
-width: 50px;
+
+.main  .countbox .count-item{
+height: 45px;
+width: 45px;
 margin-bottom: 8px;
 display: flex;
 align-items: center;
 justify-content: center;
-color: #fff;
-/* background-image: linear-gradient(45deg,#00d0a5, #002d4d); */
-background: #002d4d;
+color: #0c1534;
 box-shadow: 1px 1px 5px #0005;
 border-radius: 5px;
 font-size: 20px;
+}
+.row{
+  display: flex;
+  width: 100%;
+}
+.col{
+ width: 50%;
+  padding: 10px;
+  border: 1px solid blue;
+}
+
+@media (max-width: 991px) {
+  .row{
+   flex-wrap: wrap;
+  }
+  .col{
+    width: 100%;
+    padding: 20px;
+  }
 }
