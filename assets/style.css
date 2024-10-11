@@ -93,3 +93,13 @@ font-size: 20px;
     padding: 20px;
   }
 }
+
+@media (max-width: 421px) {
+  .main .countbox .count-item{
+    height: 36px;
+    width: 36px;
+  }
+  .main  .countbox .item {
+    margin: 10px;
+}
+}
