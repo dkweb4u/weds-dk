@@ -210,6 +210,16 @@ text-align: center;
   margin: 15px auto 40px;
   border-radius: 0px 30px;
 }
+footer{
+  background: #fff;
+  box-shadow: 1px 1px 5px #0005;
+}
+footer p{
+  text-align: center;
+  font-weight: 400;
+  font-size: 18px;
+  padding: 15px 10px;
+}
 @keyframes letterway {
   0%{
     background-size:0% 100%;
